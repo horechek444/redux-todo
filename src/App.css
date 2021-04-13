@@ -1,39 +1,65 @@
-.App {
-  text-align: center;
+#root {
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: sans-serif;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: aliceblue;
+  width: 1220px;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.app__title {
+  margin: 0 0 15px;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.add__cover {
+  display: flex;
+  min-width: 250px;
+  justify-content: space-between;
+}
+
+/** add todo **/
+.add-todo {
+  margin-left: 0.5rem;
+}
+
+/** todo list **/
+.todo__list {
+  margin: 1rem 0 1rem;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+
+/** todo item **/
+.todo__item {
+  font-family: monospace;
+  cursor: pointer;
+  line-height: 1.5;
+}
+.todo__text_completed {
+  text-decoration: line-through;
+  color: lightgray;
+}
+
+/** visibility filters **/
+.filter {
+  padding: 0.3rem 0;
+  margin: 0 0.3rem;
+  cursor: pointer;
+}
+.filter_active {
+  border-bottom: 1px solid black;
+}
+
+.visibility-filters {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
