@@ -1,3 +1,8 @@
+# Redux to do
+
+Приложение для создания списка дел, выполнено с использованием React и Redux для знакомства с Redux.
+Можно добавлять дело, отмечать как выполненное и сортировать по категориям.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
